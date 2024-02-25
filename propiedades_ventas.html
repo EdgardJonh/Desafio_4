@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/estilos.css" />
+      <!-- Bootstrap CDN -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+      />
+    <style>
+      .color {
+        width: 200px;
+        height: 200px;
+        border: solid 3px black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Inmobiliaria ADL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="propiedades_ventas.html">En venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="propiedades_alquiler.html">Alquiler</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid main-section">
+      <h1 class="text-white">Encuentra tu nueva propiedad</h1>
+    </main>
+    <section id="venta">
+      <h2>Propiedades en venta</h2>
+      <div class="row ventas">
+       
+      </div>
+      <a  class="btn btn-dark botonVentas">Ver mas propiedades en venta</a>
+    </section>
+    <script src="assets/js/propiedades_ventas.js"></script>
+         <!-- Font awesome -->
+         <script
+         src="https://kit.fontawesome.com/f5bdbb41e0.js"
+         crossorigin="anonymous"
+       ></script>
+       <!-- Bootstrap JS -->
+       <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+         crossorigin="anonymous"
+       ></script>
+    <!-- <script>
+    // funcion que permite agregar color al div 
+      function colores(loscolores, elcolor) {
+        if (loscolores.style.backgroundColor == "") {
+          loscolores.style.backgroundColor = elcolor;
+        } else {
+            loscolores.style.backgroundColor = ''
+        }
+      }
+      //funcion que permite agregar un parrafo al div
+      function agregaCard(losDivs, saludo) {
+        if (losDivs.innerHTML == '') {
+            
+            for (let i = 0; i < 3; i++) {
+                
+                losDivs.innerHTML += `<p>${saludo}</p>`
+                
+            }
+          
+        } else {
+            losDivs.innerHTML=''
+        }
+       
+      }
+      let color = document.querySelector(".color");
+      color.addEventListener("click", () => {
+        agregaCard(color,'hola este es el card')
+        // colores(color, "red");
+      });
+      // const ar = [nom = 'ed', edad = 20, an = '1990']
+      // const ar2 = {nom : 'ed', edad: 20,an:'1990'}
+      //     console.log(ar)
+      //     console.log(ar2)
+      // let lista = document.querySelector('.lista')
+      // const arrays = ['p','a','div']
+      // for (let i = 0; i < 3; i++) {
+      //     let as = document.createElement(arrays[1])
+      //     as.innerHTML= `${arrays}`
+      //     lista.appendChild(as)
+      // }
+      // const array = ['lunes','marte','viernes']
+      // let html = ''
+      // for (const arrays of array) {
+      //     html +=  `<p>${arrays}</p>`
+      // }
+      // let d = document.querySelector('.lista')
+      // d.innerHTML= html
+      // const colores = ['azul','amarillo','rojo','morado','plomo','naranjo']
+      // let longitudarray = colores.length
+      // let ultimo = longitudarray -1
+
+      //   // console.log(colores[ultimo])
+      //   let nombres = [
+      //     "Juan",
+      //     "Luisa",
+      //     "Fabian",
+      //     "Jorge",
+      //     "Elon",
+      //     "Steve",
+      //     "Bill",
+      //     "Estefany",
+      //   ];
+      //   let nom = nombres.length
+      //   let n = nom -1
+      //   let n2 = nom - 3
+      // console.log(nombres[0])
+      //   console.log(nombres[n])
+      //   console.log(nombres[n2])
+      // const estudiantes = [
+      // ["Francisca", 10, 8, 10],
+      // ["Camila", 9, 9, 10, 9],
+      // ["Patricio", 7, 9, 9, 6, 10, 10],
+      // ["Pedro", 8, 8, 10]
+      // ];
+      // let html = ''
+      // for (const estudiante of estudiantes) {
+      //     html += `<p>`
+      //         for (const nota of estudiante){
+
+      //         html+=   `${nota}`
+      //     }
+      //     html+=`</p>`
+      // }
+      // let lis = document.querySelector('.lista')
+      // lis.innerHTML = html
+    </script> -->
+  </body>
+</html>
